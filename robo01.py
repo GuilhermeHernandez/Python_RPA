@@ -1,7 +1,21 @@
 import pyautogui as p
 
-p.sleep(2)          #Aguarda determinado tempo
-print(p.position())         #Mostra a atual posição do mouse!
+p.hotkey('win','r')
+p.sleep(1)
 
-#p.moveTo() Move mouse para determinada localização
-p.click(34,530) # Executa apenas 1 click em determinada localização.
+p.typewrite('notepad')
+p.sleep(1)
+
+p.press('enter')
+p.sleep(1)
+
+p.typewrite('Ola , sou um bot !')
+p.sleep(1)
+
+janela = p.getActiveWindow()
+janela.close()
+p.sleep(1)
+
+p.press('right')
+p.sleep(1)
+p.press('enter')
