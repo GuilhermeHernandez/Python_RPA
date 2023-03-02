@@ -9,5 +9,9 @@ janela = p.getActiveWindow()
 janela.maximize()
 
 r.type('/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input','RPA[enter]')          #Interage com o elementos informado de acordo com seu parametro.
+r.wait(1.0)
 
+r.snap('page', "Print_navegacao.png")
+r.wait(1.0)
 
+janela.close()
